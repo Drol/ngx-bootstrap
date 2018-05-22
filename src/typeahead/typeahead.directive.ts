@@ -253,9 +253,10 @@ export class TypeaheadDirective implements OnInit, OnDestroy {
 
     // if an item is visible - don't change focus
     if (e.keyCode === 9) {
-      e.preventDefault();
-      this._container.selectActiveMatch();
-
+      // e.preventDefault();
+      // this._container.selectActiveMatch();
+      this.hide();
+      
       return;
     }
   }
